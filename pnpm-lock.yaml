@@ -11,6 +11,9 @@ overrides:
   babel-plugin-module-resolver@5.0.1: 5.0.0
 
 patchedDependencies:
+  ember-resolver@13.1.0:
+    hash: 3onxjb2gsggfq3anwgrbozub54
+    path: patches/ember-resolver@13.1.0.patch
   ember-source@5.8.0:
     hash: qsivfx5huurlb5tuvochap65l4
     path: patches/ember-source@5.8.0.patch
@@ -683,7 +686,7 @@ importers:
         version: 7.6.0
       ember-resolver:
         specifier: ^13.1.0
-        version: 13.1.0(ember-source@5.12.0)
+        version: 13.1.0(patch_hash=3onxjb2gsggfq3anwgrbozub54)(ember-source@5.12.0)
       ember-source:
         specifier: ^5.8.0
         version: 5.12.0(@glimmer/component@1.1.2)
@@ -802,12 +805,6 @@ importers:
       tmp:
         specifier: ^0.1.0
         version: 0.1.0
-      typescript:
-        specifier: ^5.4.5
-        version: 5.6.3
-
-  packages/ssr:
-    devDependencies:
       typescript:
         specifier: ^5.4.5
         version: 5.6.3
@@ -1620,7 +1617,7 @@ importers:
         version: 8.1.1(@ember/test-helpers@4.0.4)(ember-source@5.12.0)(qunit@2.22.0)
       ember-resolver:
         specifier: ^13.1.0
-        version: 13.1.0(ember-source@5.12.0)
+        version: 13.1.0(patch_hash=3onxjb2gsggfq3anwgrbozub54)(ember-source@5.12.0)
       ember-source:
         specifier: ~5.12.0
         version: 5.12.0(@glimmer/component@1.1.2)
@@ -2109,7 +2106,7 @@ importers:
         version: 8.1.1(@ember/test-helpers@4.0.4)(@glint/template@1.5.0)(ember-source@5.12.0)(qunit@2.22.0)
       ember-resolver:
         specifier: ^13.1.0
-        version: 13.1.0(ember-source@5.12.0)
+        version: 13.1.0(patch_hash=3onxjb2gsggfq3anwgrbozub54)(ember-source@5.12.0)
       ember-source:
         specifier: ~5.12.0
         version: 5.12.0(@glimmer/component@1.1.2)(@glint/template@1.5.0)(webpack@5.96.1)
@@ -2271,7 +2268,7 @@ importers:
         version: 8.1.1(@ember/test-helpers@3.3.1)(@glint/template@1.5.0)(ember-source@5.3.0)(qunit@2.22.0)
       ember-resolver:
         specifier: ^13.1.0
-        version: 13.1.0(ember-source@5.3.0)
+        version: 13.1.0(patch_hash=3onxjb2gsggfq3anwgrbozub54)(ember-source@5.3.0)
       ember-source:
         specifier: ~5.3.0
         version: 5.3.0(@babel/core@7.26.0)(@glimmer/component@1.1.2)(@glint/template@1.5.0)(webpack@5.96.1)
@@ -15977,7 +15974,7 @@ packages:
       - supports-color
     dev: true
 
-  /ember-resolver@13.1.0(ember-source@5.12.0):
+  /ember-resolver@13.1.0(patch_hash=3onxjb2gsggfq3anwgrbozub54)(ember-source@5.12.0):
     resolution: {integrity: sha512-t/PjXLCl5tM9EQXGIFoBgHiA41HkLJpfo17Nud5Cy9eyUPGcnsMjWJqQ+O5QHA0E63Sp+zTn4y/RS5Tu2v2ydg==}
     engines: {node: 14.* || 16.* || >= 18}
     peerDependencies:
@@ -15991,8 +15988,9 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
+    patched: true
 
-  /ember-resolver@13.1.0(ember-source@5.3.0):
+  /ember-resolver@13.1.0(patch_hash=3onxjb2gsggfq3anwgrbozub54)(ember-source@5.3.0):
     resolution: {integrity: sha512-t/PjXLCl5tM9EQXGIFoBgHiA41HkLJpfo17Nud5Cy9eyUPGcnsMjWJqQ+O5QHA0E63Sp+zTn4y/RS5Tu2v2ydg==}
     engines: {node: 14.* || 16.* || >= 18}
     peerDependencies:
@@ -16006,6 +16004,7 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
+    patched: true
 
   /ember-rfc176-data@0.3.18:
     resolution: {integrity: sha512-JtuLoYGSjay1W3MQAxt3eINWXNYYQliK90tLwtb8aeCuQK8zKGCRbBodVIrkcTqshULMnRuTOS6t1P7oQk3g6Q==}
