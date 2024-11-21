@@ -8,6 +8,7 @@ import {
   compatPrebuild,
   assets,
   contentFor,
+  ssrPlugin,
 } from "@embroider/vite";
 import { resolve } from "path";
 import { babel } from "@rollup/plugin-babel";
@@ -29,6 +30,7 @@ export default defineConfig(({ mode }) => {
       ],
     },
     plugins: [
+      ssrPlugin(),
       hbs(),
       templateTag(),
       scripts(),
