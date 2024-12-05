@@ -1,0 +1,1 @@
+{"version":3,"file":"adapter.js","sourceRoot":"","sources":["adapter.ts"],"names":[],"mappings":";;;AAAA,4CAAyD;AAAhD,qGAAA,aAAa,OAAW","sourcesContent":["export { EmberDataBase as default } from '../ember-data';\n"]}

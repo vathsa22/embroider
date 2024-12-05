@@ -1,0 +1,1 @@
+{"version":3,"file":"options.js","sourceRoot":"","sources":["options.ts"],"names":[],"mappings":"","sourcesContent":["export interface AuditOptions {\n  debug?: boolean;\n}\n\nexport interface AuditBuildOptions extends AuditOptions {\n  'reuse-build'?: boolean;\n  app: string;\n}\n"]}
