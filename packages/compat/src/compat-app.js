@@ -409,7 +409,7 @@ class CompatApp {
             // internal implementation detail, and respecting outputPaths here is
             // unnecessary complexity. The corresponding code that adjusts the HTML
             // <link> is in updateHTML in app.ts.
-            outputPaths: { app: `/assets/${this.name}.css` },
+            outputPaths: this.legacyEmberAppInstance.options.outputPaths.app.css || { app: `/assets/${this.name}.css` },
             registry: this.legacyEmberAppInstance.registry,
             minifyCSS: this.legacyEmberAppInstance.options.minifyCSS.options,
         };
